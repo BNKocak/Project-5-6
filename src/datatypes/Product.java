@@ -2,7 +2,7 @@ package datatypes;
 
 import java.util.List;
 
-public class product {
+public class Product {
 
     private String id;
     private String categorie;
@@ -13,7 +13,7 @@ public class product {
     private String imagepath;
     private List<String> specs;
 
-    public product(String id,String categorie,String naam,String description,Float price, Integer voorraad,
+    public Product(String id,String categorie,String naam,String description,Float price, Integer voorraad,
                    String imagepath, List<String> specs) {
         this.id = id;
         this.categorie = categorie;

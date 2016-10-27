@@ -2,7 +2,7 @@ package datatypes;
 
 import java.util.List;
 
-public class order {
+public class Order {
 
     private String id;
     private String email;
@@ -10,7 +10,7 @@ public class order {
     private List<String> adres;
     private List<List<String>> items;
 
-    public order(String id, String email, String date, List<String> adres, List<List<String>> items) {
+    public Order(String id, String email, String date, List<String> adres, List<List<String>> items) {
         this.id = id;
         this.email = email;
         this.date = date;

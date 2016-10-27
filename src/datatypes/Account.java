@@ -2,7 +2,7 @@ package datatypes;
 
 import java.util.List;
 
-public class account {
+public class Account {
 
     private String voornaam;
     private String achternaam;
@@ -16,7 +16,7 @@ public class account {
     private List<String> winkelwagen;
     private List<String> adres;
 
-    public account(String voornaam, String achternaam,Boolean isadmin,String email,String wachtwoord,
+    public Account(String voornaam, String achternaam,Boolean isadmin,String email,String wachtwoord,
                    String mobielnummer,String huistelnummer,List<String> favorites,List<String> wishlist,
                    List<String> winkelwagen,List<String> adres) {
         this.voornaam = voornaam;
