@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Product {
 
-    private String id;
+    private String product_id;
     private String categorie;
     private String naam;
     private String description;
@@ -13,9 +13,9 @@ public class Product {
     private String imagepath;
     private List<String> specs;
 
-    public Product(String id,String categorie,String naam,String description,Float price, Integer voorraad,
+    public Product(String product_id,String categorie,String naam,String description,Float price, Integer voorraad,
                    String imagepath, List<String> specs) {
-        this.id = id;
+        this.product_id = product_id;
         this.categorie = categorie;
         this.naam = naam;
         this.description = description;
@@ -25,8 +25,8 @@ public class Product {
         this.specs = specs;
     }
 
-    public String getId() {
-        return id;
+    public String getProduct_id() {
+        return product_id;
     }
 
     public String getCategorie() {

@@ -4,22 +4,22 @@ import java.util.List;
 
 public class Order {
 
-    private String id;
+    private String order_id;
     private String email;
     private String date;
     private List<String> adres;
     private List<List<String>> items;
 
-    public Order(String id, String email, String date, List<String> adres, List<List<String>> items) {
-        this.id = id;
+    public Order(String order_id, String email, String date, List<String> adres, List<List<String>> items) {
+        this.order_id = order_id;
         this.email = email;
         this.date = date;
         this.adres = adres;
         this.items = items;
     }
 
-    public String getId() {
-        return id;
+    public String getOrder_id() {
+        return order_id;
     }
 
     public String getEmail() {
