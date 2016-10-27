@@ -1,9 +1,7 @@
-import com.mongodb.MongoClient;
-import com.mongodb.client.MongoDatabase;
+import database.mongodb;
+
 import static spark.Spark.*;
-/**
- * Created by Admin on 25-10-2016.
- */
+
 public class main {
 
     static mongodb db = new mongodb();
@@ -17,5 +15,5 @@ public class main {
             return "Hello: " + req.params(":name");
             }
         );
-    };
+    }
 }

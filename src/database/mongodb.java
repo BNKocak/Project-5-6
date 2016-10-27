@@ -1,13 +1,12 @@
+package database;
+
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-/**
- * Created by Admin on 25-10-2016.
- */
 public class mongodb {
-    MongoClient mongoClient = new MongoClient("mikenachtigaal.nl", 27017);
-    MongoDatabase db = mongoClient.getDatabase("test");
+    private MongoClient mongoClient = new MongoClient("mikenachtigaal.nl", 27017);
+    private MongoDatabase db = mongoClient.getDatabase("test");
 
     public void addTest(){
         db.getCollection("Test").insertOne(new Document("Info",
@@ -16,4 +15,7 @@ public class mongodb {
                     .append("naam", "kaas")
         ));
     }
+
+
+
 }
